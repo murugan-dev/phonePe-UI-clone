@@ -1,19 +1,30 @@
-const openMenu = document.querySelector(".open-menu");
-const closeMenu = document.querySelector(".close-menu");
+const open = document.querySelector(".fa-bars");
+const close = document.querySelector(".fa-xmark")
 const ul = document.querySelector("header ul");
 
-openMenu.addEventListener("click", (e) => {
-    e.preventDefault();
-    closeMenu.style.display = "block";
-    openMenu.style.display = "none";
-    ul.classList.remove("close");
-    ul.classList.add("open");
-});
+open.addEventListener("click", (e)=>{
+    ul.classList.add("toggle"); 
+})
 
-closeMenu.addEventListener("click", (e) => {
-    e.preventDefault();
-    closeMenu.style.display = "none";
-    openMenu.style.display = "block";
-    ul.classList.remove("open");
-    ul.classList.add("close");
-});
+close.addEventListener("click", (e)=>{
+    ul.classList.remove("toggle");
+})
+
+const sliders = document.querySelectorAll(".slider-item");
+let sliderPosition = 0;
+const lengthOfSlider = sliders.length;
+const delay = 90000; 
+
+// function moveSlider() {
+//     sliders.forEach(slider => slider.classList.add("hidden"));
+//     sliders[sliderPosition].classList.remove("hidden");
+//     sliderPosition++;
+//     if (sliderPosition >= lengthOfSlider) {
+//         sliderPosition = 0;
+//     }
+// }
+
+// setInterval(moveSlider, delay);
+
+// moveSlider();
+sliders[3].classList.remove("hidden");

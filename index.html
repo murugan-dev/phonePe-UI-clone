@@ -9,31 +9,87 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div>       
-        <header class="w-full h-16 bg-warmGray-50 flex items-center justify-between">
-            <div class="ml-5">
-                <a href="https://www.phonepe.com/">
-                    <img src="./img/logo.svg" alt="PhonePe Logo" class="w-48 h-32">
+    <div class="">       
+        <header class="w-full h-16 bg-warmGray-50 flex items-center justify-between relative ease-out top-0 z-10">
+            <div>
+                <a href="">
+                    <img src="./img/logo.svg" alt="PhonePe Logo" class="h-40 w-36 pl-5">
                 </a>
             </div>
             <div>
-                <div class="hidden lg:flex">
-                    <ul class="close open flex flex-col gap-4 bg-slate-950">
-                        <li>BUSINESS SOLUTIONS</li>
-                        <li>PRESS</li>
-                        <li>CAREERS</li>
-                        <li>ABOUT US</li>
-                        <li>BLOG</li>
-                        <li>CONTACT US</li>
-                        <li>TRUST & SAFETY</li>
-                    </ul>
-                </div>
-                <div class="text-2xl text-purple-800 mr-5">
-                    <i class="fa-solid fa-bars open-menu"></i>
-                    <i class="fa-solid fa-xmark hidden close-menu"></i>
+                <i class="fa-solid fa-bars lg:hidden pr-5 text-2xl text-indigo-900 "></i>
+            </div>
+            <ul class="hidden lg:flex justify-center items-center lg:gap-5 lg:mr-14 font-bold "  >
+                   <div>
+                       <i class="fa-solid fa-xmark nav-list mt-16 lg:hidden ml-[70%] text-2xl text-indigo-900"></i>
+                   </div>
+    
+                        <li class="nav-list active:text-indigo-700  hover:text-indigo-900 lg:hidden">HOME</li>
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">BUSINESS SOLUTIONS</li>
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">PRESS</li>
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">CAREERS</li>
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">ABOUT US</li>                                                                                                  
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">BLOG</li>
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">CONTACT US</li>
+                        <li class="nav-list active:text-indigo-700 hover:text-indigo-900">TRUST & SAFETY</li>
+                </div>                             
+            </ul>
+    </header>
+      
+    <section class="flex justify-center items-center w-full ">
+            <div class="w-full hidden relative slider-item">
+                <img src="./img/mobile scroll img/mobile-scroll1.png" alt="slider" class="-z-10 w-full">
+                <div class="font-bold flex flex-col gap-3 items-start justify-start ml-8 absolute top-24">
+                    <h2 class="text-[#5d4c92] text-4xl ">Download all your <br>favourite apps</h2>
+                    <p class="text-white text-2xl">from India's very own <br>Android app store</p>
+                    <button class="p-3 bg-white rounded-full w-40 text-[10px]">Download Indus Appstore</button>
                 </div>
             </div>
-        </header>
+            <div class="hidden slider-item w-full relative">
+                <img src="./img/mobile scroll img/mobile-scroll2.jpg" alt="slider class="-z-10 w-full">
+                <div class="font-bold flex flex-col gap-3 items-start justify-start ml-8 absolute top-24">
+                    <h1 class="text-indigo-900 text-4xl"><del class="text-indigo-300 pl-3">2%</del>FREE</h1>
+                    <h3 class="text-indigo-900 text-2xl">Accept payments for your <br>online business at zero cost</h3>
+                    <p class="text-indigo-900">Sign up for PhonePe Payment Gateway</p>
+                    <button class="rounded-full text-white p-3 text-[12px] bg-indigo-900">Get Started</button>
+                </div>
+            </div>
+            <div class="hidden slider-item w-full relative">
+                <img src="./img/mobile scroll img/mobile-scroll3.jpg" alt="slider class="-z-10 w-full">
+                <div class="font-bold flex flex-col gap-3 items-start justify-start ml-8 absolute top-24">
+                  <p class="text-green-800 text-2xl">One payment solution <br>for all your business needs</p>
+                  <h1 class="text-green-900 text-3xl">PhonePe Business App</h1>
+                  <button class="text-white rounded-full text-[15px] bg-blue-600 font-bold p-2">Register Now</button>
+                </div>
+            </div>
+            <div class="hidden slider-item w-full relative">
+                <img src="./img/mobile scroll img/mobile-scroll4.png" alt="slider" class="-z-10 w-full">
+                <div class="font-bold flex flex-col gap-3 items-start justify-start ml-8 absolute top-24">
+                    <h2>ZERO BROKERAGE</h2>
+                    <p>on Cash delivery and Intraday + on F&O <strong>ZERO</strong>  account opening fee</p>
+                    <button>Download Now</button>
+                    <p>*On unlimited orders till June 30, 2024</p>
+                </div>
+            </div>    
+            <div class="hidden slider-item w-full relative">
+                <img src="./img/mobile scroll img/mobile-scroll5.png" alt="slider" class="-z-10 w-full">
+                <div class="font-bold flex flex-col gap-3 items-start justify-start ml-8 absolute top-24">
+                    <h2>View statements & <br>  manage financial <br>  data consents</h2>
+                    <p>Register on PhonePe Account <br> Aggregator now!</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+            <div class="hidden slider-item w-full relative">
+                <img src="./img/mobile scroll img/mobile-scroll6.png" alt="slider" class="-z-10 w-full">
+                <div class="font-bold flex flex-col gap-3 items-start justify-start ml-8 absolute top-24">
+                    <h2>PhonePe <span>Pulse</span></h2>
+                    <h3>Beat of Progress</h3>
+                    <p>Find out how money moves in a country of 140 Crore! Now updated with the latest data for Q1 2024 (Jan-Mar)</p>
+                    <button>Explore Now</button>
+                </div>
+            </div>
+        </section>
+
     </div>
     <script src="app.js"></script>
 </body>

@@ -13,18 +13,18 @@ close.addEventListener("click", (e)=>{
 const sliders = document.querySelectorAll(".slider-item");
 let sliderPosition = 0;
 const lengthOfSlider = sliders.length;
-const delay = 90000; 
+const delay = 5000; 
 
-// function moveSlider() {
-//     sliders.forEach(slider => slider.classList.add("hidden"));
-//     sliders[sliderPosition].classList.remove("hidden");
-//     sliderPosition++;
-//     if (sliderPosition >= lengthOfSlider) {
-//         sliderPosition = 0;
-//     }
-// }
+function moveSlider() {
+    sliders.forEach(slider => slider.classList.add("hidden"));
+    sliders[sliderPosition].classList.remove("hidden");
+    sliderPosition++;
+    if (sliderPosition >= lengthOfSlider) {
+        sliderPosition = 0;
+    }
+}
 
-// setInterval(moveSlider, delay);
+setInterval(moveSlider, delay);
 
-// moveSlider();
-sliders[3].classList.remove("hidden");
+moveSlider();
+

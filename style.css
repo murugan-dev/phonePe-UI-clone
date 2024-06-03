@@ -23,3 +23,25 @@
 .hidden{
     display: none;
 }
+
+.dot-style {
+    height: 8px;
+    width: 8px;
+    background-color: #cfcdcd;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px; /* Added margin for spacing between dots */
+}
+
+.active-dot {
+    background-color: rgb(79, 42, 109);
+}
+
+.dot-style:hover {
+    background-color: rgb(79, 42, 109);
+}
+
+.bg-blue-400:hover > .fa-arrow-right
+{
+    transform: translateX(4px);
+}

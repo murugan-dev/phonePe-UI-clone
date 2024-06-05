@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhonePe clone</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
             <div>
                 <i class="fa-solid fa-bars lg:hidden pr-5 text-2xl text-indigo-900 "></i>
             </div>
-            <ul class="hidden lg:flex justify-center items-center lg:gap-5 lg:mr-14 font-semibold"  >
+            <ul class="hidden lg:flex justify-center items-center lg:gap-5 lg:mr-14 font-semibold menu-active"  >
                    <div>
                        <i class="fa-solid fa-xmark nav-list mt-16 lg:hidden ml-[70%] text-2xl text-indigo-900"></i>
                    </div>
@@ -158,42 +158,52 @@
             <img src="./assets/img/hero-youtube-video-section.png" alt="hero-youtube-video-section" class="h-2/5 w-full lg:h-96 lg:w-[900px]">
             <img src="./assets/img/logo.svg" alt="PhonePe logo" class="h-52 w-56 -mt-10">
         </section>
-        <section >
-            <div>
-                <a href="https://youtu.be/shu8-g0BtT4?si=_18GXHALxkzcZtmN">
-                    <img src="./assets/img/video img/poster1.jpg" alt="POSTER" class="h-96 w-96">
-                </a>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <div>
-                <a href="https://youtu.be/pkYjkcozE5M?si=OP_fZZW-Z3uaXfcO">
-                    <img src="./assets/img/video img/poster2.jpg" alt="POSTER">
+        
 
-                </a>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <div>
-                <a href="https://youtu.be/aI2aqXtfXr8?si=KdPjOy_phoaOifHP">
-                    <img src="./assets/img/video img/poster3.jpg" alt="POSTER">
 
-                </a>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <div>
-                <a href="https://youtu.be/JTt405gG6P0?si=wx_q_4B7x9b1bJS7">
-                    <img src="./assets/img/video img/poster4.jpg" alt="POSTER">
+        <section class="flex w-full justify-center items-center video-hover ">
+            <div class="group">
+                <a href="https://youtu.be/shu8-g0BtT4?si=_18GXHALxkzcZtmN" class="flex gap-4 justify-center items-center flex-col " target="_blank">
 
+                <img src="./assets/img/video img/poster1.jpg" alt="POSTER" class="h-56 w-20 lg:h-72 lg:w-40 object-cover rounded-2xl">
+                <i class="fa-solid fa-circle-play text-xl text-indigo-700 lg:text-2xl"></i>
                 </a>
-                <i class="fa-solid fa-circle-play"></i>
             </div>
-            <div>
-                <a href="https://youtu.be/GzM7bx2S2lc?si=eEXpleNuOUvValh6">
-                    <img src="./assets/img/video img/poster5.jpg" alt="POSTER">
-
+            <div class="group">
+                <a href="https://youtu.be/pkYjkcozE5M?si=OP_fZZW-Z3uaXfcO" class="flex gap-4 justify-center items-center flex-col" target="_blank">
+                <img src="./assets/img/video img/poster2.jpg" alt="POSTER" class="h-56 w-20 object-cover rounded-2xl lg:h-72 lg:w-40">
+                <i class="fa-solid fa-circle-play text-xl text-indigo-700 lg:text-2xl"></i>
+               </a>
+            </div>
+            
+            <div class="group">
+                <a href="https://youtu.be/aI2aqXtfXr8?si=KdPjOy_phoaOifHP" class="flex gap-4 justify-center items-center flex-col" target="_blank">
+                <img src="./assets/img/video img/poster3.jpg" alt="POSTER" class="h-56 w-auto object-cover rounded-2xl lg:h-72 lg:w-72">
+                <i class="fa-solid fa-circle-play text-xl text-indigo-700 lg:text-2xl"></i>
                 </a>
-                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <div class="group" >
+                <a href="https://youtu.be/JTt405gG6P0?si=wx_q_4B7x9b1bJS7" class="flex gap-4 justify-center items-center flex-col" target="_blank">
+                    <img src="./assets/img/video img/poster4.jpg" alt="POSTER" class="h-56 w-20 object-cover rounded-2xl lg:h-72 lg:w-40">
+                    <i class="fa-solid fa-circle-play text-xl text-indigo-700 lg:text-2xl"></i>
+                </a>
+            </div>
+            <div class="group">
+                <a href="https://youtu.be/GzM7bx2S2lc?si=eEXpleNuOUvValh6" class="flex gap-4 justify-center items-center flex-col" target="_blank">
+
+                    <img src="./assets/img/video img/poster5.jpg" alt="POSTER" class="h-56 w-20 object-cover rounded-2xl lg:h-72 lg:w-40">
+                    <i class="fa-solid fa-circle-play text-xl text-indigo-700 lg:text-2xl"></i>
+                </a>
             </div>
         </section>
+        
+        
+        
+        
+        
+
+-
+        
         <section class="my-10 flex justify-center items-center gap-5 flex-col">
             <a href="https://www.youtube.com/watch?v=aI2aqXtfXr8&list=PL4dV2TSluEZyeLy1MovjRnyECn1o25FFQ">
                 <button class="border-indigo-900 text-indigo-900 bg-white hover:bg-indigo-900 hover:text-white px-10 py-3 border-2 rounded-full">Watch all videos</button>

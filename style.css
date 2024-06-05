@@ -55,3 +55,22 @@
     margin-right: 100px;
     color: black;
 }
+
+.video-hover .group:hover {
+    z-index: 20 !important;
+    transform: scale(1.1);
+}
+
+.video-hover .group {
+    transition: z-index 0.3s ease, transform 0.3s ease;
+}
+
+.video-width {
+    width: 200px !important;
+}
+
+.menu-active-con{
+    color: rgb(133, 92, 180) !important;
+}
+
+

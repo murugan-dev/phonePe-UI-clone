@@ -20,7 +20,7 @@
     padding-left: 40px;
 }
 
-.hidden{
+.hidden, .close-accordin{
     display: none;
 }
 
@@ -44,4 +44,14 @@
 .bg-blue-400:hover > .fa-arrow-right
 {
     transform: translateX(4px);
+}
+
+.open-accordin{
+    display: block;
+}
+
+.open-footer-menu{
+    margin-top: 100px;
+    margin-right: 100px;
+    color: black;
 }

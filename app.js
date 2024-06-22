@@ -13,11 +13,11 @@ close.addEventListener("click", (e)=>{
 
 const menuList = document.querySelector(".menu-active .nav-list");
 
-menuList.forEach((item)=>{
-    item.addEventListener("click",()=>{
-        item.classList.add("menu-active-con")
-    })
-})
+// menuList.forEach((item)=>{
+//     item.addEventListener("click",()=>{
+//         item.classList.add("menu-active-con")
+//     })
+// })
 
 
 
